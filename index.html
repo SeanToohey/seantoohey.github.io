@@ -1,93 +1,132 @@
- <!-- FlatFy Theme - Andrea Galanti /-->
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="JOLT.ca the Lab of Sean Toohey ">
     <meta name="author" content="Sean Toohey">
+    <title>JOLT</title>
 
-    <title>JOLT.ca</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Google Web Font -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom CSS-->
-    <link href="css/general.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
 
 
-
-	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
-	<!--[if IE 9]>
-		<script src="js/PIE_IE9.js"></script>
-	<![endif]-->
-	<!--[if lt IE 9]>
-		<script src="js/PIE_IE678.js"></script>
-	<![endif]-->
-
-	<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-	<![endif]-->
-
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/blog.css">
+        <!--<![endif]-->
 </head>
+<body>
 
-<body id="home">
 
-	
-	<!-- FullScreen -->
-    <div class="intro-header">
-		<div class="col-xs-12 text-center abcen1">
-			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">JOLT.ca</h1>
-			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">the Lab of Sean Toohey</h3>
-			<ul class="list-inline intro-social-buttons">
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">JOLT.ca</h1>
+            <h2 class="brand-tagline">the Lab of Sean Toohey</h2>
 
-				<li ><a href="https://ca.linkedin.com/in/seanttoohey" class="btn  btn-lg mybutton_cyano wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">LinkedIn</span></a>
-				</li>
-        <li><a href="https://twitter.com/seantoohey" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Twitter</span></a>
-        </li>
-        <li><a href="https://github.com/SeanToohey/" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">GitHub</span></a>
-        </li>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button"  href="https://ca.linkedin.com/in/seanttoohey">LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://twitter.com/seantoohey">Twitter</a>
+                    </li>
 
-			</ul>
-		</div>
-        <!-- /.container -->
-
+                </ul>
+            </nav>
+        </div>
     </div>
 
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">Pinned Post</h1>
 
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-S	<script src="js/script.js"></script>
-	<!-- StikyMenu -->
-	<script src="js/stickUp.min.js"></script>
-	<script type="text/javascript">
-	  jQuery(function($) {
-		$(document).ready( function() {
-		  $('.navbar-default').stickUp();
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Sean's avatar" class="post-avatar" src="img/sean-avatar.jpeg">
 
-		});
-	  });
+                        <h2 class="post-title">Lazy &amp; Inconsistent Blogging</h2>
 
-	</script>
-	<!-- Smoothscroll -->
-	<script type="text/javascript" src="js/jquery.corner.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script>
-	 new WOW().init();
-	</script>
-	<script src="js/classie.js"></script>
-	<script src="js/uiMorphingButton_inflow.js"></script>
+                        <p class="post-meta">
+                            By <a href="#" class="post-author">Sean Toohey</a> under Lazy Blogger on 01 Dec 2016
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                          Wow! I have been blogging for alost two decades with very little consistency, rhyme or reason. The existing version of the JOLT blog was started back in April of 2009, as the 3rd iteration of the Daily JOLT. As of today (Dec 1, 2016), it has not seen a new post in over a year! The 4th iteration was lost in a lab explosion on my last server.
+                        </p>
+                          <P>
+                            You can find the "Daily" JOLT on <a href="http://seantoohey.blogspot.ca/">Blogspot</a>. I also have a 2007 travel blog still on wordpress, along with a cycling blog, and a Kayak building blog lost to the ether...
+                          </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="posts">
+                <h1 class="content-subhead">Recent Posts</h1>
+
+
+
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Sean's avatar" class="post-avatar" src="img/sean-avatar.jpeg">
+
+                        <h2 class="post-title">Searching for simple CSS Framework</h2>
+
+                        <p class="post-meta">
+                            By <a href="#" class="post-author">Sean Toohey</a>  under <a class="post-category post-category-js" href="#">CSS</a>  on 01 Dec 2016
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                          I've been developing webpages since the 90s, and the last few years I've build a lot of web apps and prototypes using Twitter Bootstrap. Today i deiced to try and fins some simpler solutions.
+                        </p>
+                        <p>
+                          This blog was quickly built as a test using the <a href="http://purecss.io/" target="_blank">Pure framework</a>.
+                        </p>
+                    </div>
+                </section>
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Sean's avatar" class="post-avatar" src="img/sean-avatar.jpeg">
+
+                        <h2 class="post-title">Twenty Eight Feet: life on a little wooden boat</h2>
+
+                        <p class="post-meta">
+                            By <a href="#" class="post-author">Sean Toohey</a> under Film | Sailing  on 01 Dec 2016
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                          One of my favorite short films:<br/>
+                          <iframe src="https://player.vimeo.com/video/94842405?color=ff9933&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 </body>
-
 </html>
