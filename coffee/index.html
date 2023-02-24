@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coffee Pour Over Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <style>
+      .mdl-grid {
+        padding: 20px;
+      }
+    </style>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Coffee Pour Over Calculator</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="page-content mdl-grid">
+          <form>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <label class="mdl-textfield__label" for="ratio">Ratio</label>
+              <select class="mdl-textfield__input" id="ratio" name="ratio">
+                <option value="15">1:15</option>
+                <option value="16" selected>1:16</option>
+                <option value="17">1:17</option>
+              </select>
+            </div>
+            <br>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="number" id="grams" name="grams">
+              <label class="mdl-textfield__label" for="grams">Grams of Coffee</label>
+            </div>
+            <br>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="water" name="water" readonly>
+              <label class="mdl-textfield__label" for="water">Water Needed (ml)</label>
+            </div>
+            <br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="button" onclick="calculate()">Calculate</button>
+            <br>
+            <br>
+            <br>
+            <p><a href="http://jolt.ca">Copyright 2023 Jolt Media Ltd.</a></p>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script>
+      function calculate() {
+        const grams = document.getElementById("grams").value;
+        const ratio = document.getElementById("ratio").value;
+        const water = grams * ratio;
+        document.getElementById("water").value = water;
+      }
+    </script>
+  </body>
+</html>
